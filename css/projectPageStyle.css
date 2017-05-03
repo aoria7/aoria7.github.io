@@ -1,0 +1,76 @@
+/*  Universal styles
+--------------------------------------*/
+@font-face {
+	font-family: 'Walkway Expand UltraBold';
+	src: url('Walkway Expand UltraBold.ttf');
+	font-family: 'Walkway Black';
+	src: url('Walkway Black.ttf');
+}
+.center-text { text-align: center; }
+
+ /*Navbar*/
+  .nav-tabs li a {
+      color: #777;
+  }
+  .navbar {
+     font-family: 'Walkway Black';
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+/*Header Div*/
+.header{
+	margin-top: 50px;
+}
+.center-text{
+	 font-family: 'Walkway Expand UltraBold';
+	 color:black;
+	 margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/*Gallery*/
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/*Footer*/
+
+.footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #2d2d30;
+	text-align: center;
+	background-color: #2d2d30;
+}

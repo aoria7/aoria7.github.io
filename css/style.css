@@ -1,0 +1,312 @@
+@font-face {
+	font-family: 'Walkway Expand UltraBold';
+	src: url('Walkway Expand UltraBold.ttf');
+	font-family: 'Walkway Black';
+	src: url('Walkway Black.ttf');
+}
+body {
+      font: 400 15px/1.8;
+      color: #777;
+	/* font-family: 'Walkway Expand UltraBold';*/
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+	  
+  }
+  
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  /*Carousel*/
+  .carousel{
+	  margin-top:50px;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption{
+	  color: #000000 !important;
+	  font-family: 'Walkway Black';
+  }
+  .carousel-caption h3 {
+      color: #000000 !important;
+	  font-family: 'Walkway Black';
+	  font-size:36pt;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  
+  /*Divs*/
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  
+  /*Event div and Modal*/
+  .list-group
+  .list-group-item:first-child {
+	  color:black;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item {
+	  color:black;
+	  font-family: 'Walkway Expand UltraBold';
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .modal-footer, p{
+	   text-align: center;
+  }
+  /*Navbar*/
+  .nav-tabs li a {
+      color: #777;
+  }
+  .navbar {
+     font-family: 'Walkway Black';
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  /*Footer*/
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+/*Event Section and Modal*/
+  #e1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#e1:hover {opacity: 0.7;}
+
+#e2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#e2:hover {opacity: 0.7;}
+
+/* Modal Content (image) */
+.detailsModal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.detailsModal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+	.badge{
+		visibility:hidden;
+	}
+}
+.detailsP{
+	color:black;
+	font-family: 'Walkway Expand UltraBold';
+}
+
+.featuring{
+	color:black;
+}
+.featuringTxt{
+	font-family: 'Walkway Black';
+}
+.aboutTxt{
+	font-family: 'Walkway Black';
+	font-size: 24pt;
+}
+
+.aboutTxtP{
+	font-family: 'Walkway Expand UltraBold';
+	color:black;
+}
+
+.text-center{
+	font-family: 'Walkway Expand UltraBold';
+}
+
+.addressTxt{
+		font-family: 'Walkway Expand UltraBold';
+}
+
+.detailsH4{
+	font-family: 'Walkway Black';
+}
+
+.dateTxt{
+		font-family: 'Walkway Expand UltraBold';
+}
+
+.contactTxt{
+	font-family: 'Walkway Black';
+	font-size: 24pt;
+	text-align: center;
+}
+
+.contactPTxt{
+	font-family: 'Walkway Black';
+	color:black;
+}
+/*Individual Projects Page*/
+.mainPic{
+	border: 3px solid green;
+	text-align:center;
+	margin-left:25%;
+    width: 50%;
+	background-color: rgba(0,0,0,.5);
+}
+
+.mainPic h2,p{
+	color: #fff;
+}
+

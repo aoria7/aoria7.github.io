@@ -1,0 +1,188 @@
+ /*  Universal styles
+--------------------------------------*/
+@font-face {
+	font-family: 'Walkway Expand UltraBold';
+	src: url('Walkway Expand UltraBold.ttf');
+	font-family: 'Walkway Black';
+	src: url('Walkway Black.ttf');
+}
+ .portfolio-group .detail p { font-size: 12px; }
+ h1, h2, h3 { 
+ font-weight: 300; 
+  font-family: 'Walkway Expand UltraBold';
+  color: black;
+ }
+ h2, h3, footer i { font-size: 18px;}
+ p, form, ul { 
+ font-size: 14px; 
+ font-family: 'Walkway Expand UltraBold';
+ }
+ 
+p { line-height: 1.8em; color: black; }
+a { color: black; }
+i {	color: #909090; }
+p.justify { text-align: justify; }
+.templatemo-detail img { 
+	max-width: 250px; 
+	width: 100%; 
+	height: auto;
+	margin-right: 15px;	
+	margin-bottom: 15px; 
+}
+.left { float: left; }
+.right { float: right; }
+.center-text { text-align: center; }
+
+ /*Navbar*/
+  .nav-tabs li a {
+      color: #777;
+  }
+  .navbar {
+     font-family: 'Walkway Black';
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+/*Header Div*/
+.header{
+	margin-top: 50px;
+}
+.center-text{
+	 font-family: 'Walkway Expand UltraBold';
+}
+ /*Portfolio Sec*/
+#portfolio-content {
+	margin:  0 auto;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+#portfolio-content img { 
+	width: 250px; 
+	height: 250px; 
+}
+.portfolio-group {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin: 15px 10px;
+}
+.portfolio-group img {
+	width:100%;
+	height:100%;
+	position:absolute;
+	display:block;
+	box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.portfolio-group .detail {
+	display:block;
+	width:100%;
+	height:100%;	
+	position:absolute;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.portfolio-group .detail h3 {
+	padding: 15px 10px 0 10px;
+}
+.portfolio-group .detail p {
+	text-align: justify;
+	padding: 10px;
+	line-height: 1.8em;
+}
+.portfolio-item { 
+	display:block; 
+	width:100%; 
+	height:100%; 
+}
+.portfolio-item .btn {
+	width: 100px;
+	height: 30px;
+	color: black;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	background-color: rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	-ms-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	font-family: 'Walkway Expand UltraBold';
+}
+.portfolio-item .btn:hover { background-color: #ddd; }
+
+/*CSS3 flip
+-------------------------------------------------------------------------------------*/
+.portfolio-group .portfolio-item img,  .portfolio-group .portfolio-item .detail {
+	-webkit-transition:0.5s ease-in-out;
+	-moz-transition:0.5s ease-in-out;
+	transition:0.5s ease-in-out;
+}
+.portfolio-group .detail {
+	-moz-transform:perspective(800px) rotateY(180deg);
+	-webkit-transform:perspective(800px) rotateY(180deg);
+	transform:perspective(800px) rotateY(180deg);
+}
+.portfolio-group img {
+	-moz-transform:perspective(800px) rotateY(0deg);
+	-webkit-transform:perspective(800px) rotateY(0deg);
+	transform:perspective(800px) rotateY(0deg);
+}
+.portfolio-item:hover > .detail {
+	-moz-transform:perspective(800px) rotateY(0);
+	-webkit-transform:perspective(800px) rotateY(0);
+	transform:perspective(800px) rotateY(0);	
+}
+.portfolio-item:hover > img {
+	-webkit-transform:perspective(800px) rotateY(-179.9deg);
+	-moz-transform:perspective(800px) rotateY(-179.9deg);
+	transform:perspective(800px) rotateY(-179.9deg);	
+}
+.portfolio-group img, .portfolio-group .detail {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/*Footer*/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #2d2d30;
+  text-align: center;
+}
