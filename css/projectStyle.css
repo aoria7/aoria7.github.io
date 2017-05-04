@@ -215,7 +215,6 @@ p.justify { text-align: justify; }
 }
 
 .portfolio-item .btn {
-	display:none;
 	width: 100px;
 	height: 30px;
 	color: black;
@@ -230,7 +229,7 @@ p.justify { text-align: justify; }
 }
 
 /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
+    @media only screen and (min-width : 414px) {
 		 #portfolio-content img { 
 	width: 150px; 
 	height: 150px; 
