@@ -309,7 +309,42 @@ p.justify { text-align: justify; }
     }
 
     /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
+@media only screen and (min-width : 992px) {
+		 #portfolio-content img { 
+	width: 250px; 
+	height: 250px; 
+}
+.portfolio-group {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin: 15px 10px;
+}
 
+.portfolio-group .detail h3 {
+	padding: 15px 10px 0 10px;
+	font-size:25px;
+}
+
+.portfolio-group .detail p {
+	text-align: justify;
+	padding: 10px;
+	line-height: 1.8em;
+	font-size:12px;
+}
+
+.portfolio-item .btn {
+	width: 100px;
+	height: 30px;
+	color: black;
+	font-size:12px;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	background-color: rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	-ms-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	font-family: 'Walkway Expand UltraBold';
+}
     }
 

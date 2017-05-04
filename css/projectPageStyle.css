@@ -6,7 +6,9 @@
 	font-family: 'Walkway Black';
 	src: url('Walkway Black.ttf');
 }
-.center-text { text-align: center; }
+.center-text { 
+text-align: center; 
+}
 
  /*Navbar*/
   .nav-tabs li a {
