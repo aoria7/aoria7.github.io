@@ -58,6 +58,14 @@ text-align: center;
     padding: 10px;
 }
 
+.topP{
+	 font-family: 'Walkway Expand UltraBold';
+	 color:black;
+	 margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
 /*Gallery*/
 .gallery
 {
@@ -75,4 +83,48 @@ text-align: center;
 	background-color: #2d2d30;
 	text-align: center;
 	background-color: #2d2d30;
+}
+
+/*Media Size*/
+@media only screen and (min-width : 320px) {
+.topP{
+	 font-family: 'Walkway Expand UltraBold';
+	 color:black;
+	 margin: auto;
+    width: 100%;
+    padding: 10px, 10px;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+ @media only screen and (min-width : 414px) {
+	 .topP{
+	 font-family: 'Walkway Expand UltraBold';
+	 color:black;
+	 margin: auto;
+    width: 100%;
+    padding: 10px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.topP{
+	 font-family: 'Walkway Expand UltraBold';
+	 color:black;
+	 margin: auto;
+    width: 50%;
+    padding: 10px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.topP{
+	 font-family: 'Walkway Expand UltraBold';
+	 color:black;
+	 margin: auto;
+    width: 50%;
+    padding: 10px;
+	}
 }

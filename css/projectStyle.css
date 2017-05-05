@@ -205,6 +205,8 @@ p.justify { text-align: justify; }
 .portfolio-group .detail h3 {
 	padding: 0 0 0 0;
 	font-size:8px;
+	text-decoration: underline;
+	font-weight:bold;
 }
 
 .portfolio-group .detail p {
@@ -310,7 +312,7 @@ p.justify { text-align: justify; }
 }
     }
 
-    /* Medium Devices, Desktops */
+/* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 		 #portfolio-content img { 
 	width: 250px; 
