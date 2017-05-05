@@ -238,18 +238,6 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 480px) {
-	.badge{
-		visibility:hidden;
-	}
-}
 .detailsP{
 	color:black;
 	font-family: 'Walkway Expand UltraBold';
@@ -264,6 +252,7 @@ body {
 .aboutTxt{
 	font-family: 'Walkway Black';
 	font-size: 24pt;
+	text-decoration: underline;
 }
 
 .aboutTxtP{
@@ -309,4 +298,53 @@ body {
 .mainPic h2,p{
 	color: #fff;
 }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (min-width: 320px){
+.aboutTxt{
+	font-family: 'Walkway Black';
+	font-size: 12pt;
+	text-decoration: underline;
+	font-weight:bold;
+}
+.aboutTxtP{
+	font-family: 'Walkway Expand UltraBold';
+	color:black;
+	width:100%;
+}
+.badge{
+		visibility:hidden;
+	}
+.container {
+      padding: 0 0px;
+	  
+  }
+}
+@media screen and (min-width: 480px) {
+.badge{
+	visibility:hidden;
+}
+.aboutTxt{
+	font-family: 'Walkway Black';
+	font-size: 24pt;
+	text-decoration: underline;
+}
+
+.aboutTxtP{
+	font-family: 'Walkway Expand UltraBold';
+	color:black;
+}
+.badge{
+	visibility:visible;
+}
+.container {
+    padding: 80px 120px;
+}
+}
+@media only screen and (min-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
 
