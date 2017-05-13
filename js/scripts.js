@@ -1,32 +1,16 @@
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+//Scrollspy
+jQuery('.nav a').on( 'click', function(event) {
+	var target 	= jQuery( this );
+    var element = target.attr('href');
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    jQuery('.nav a').removeClass('active')
+    target.addClass('active');
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    jQuery("body, html").animate({ 
+      scrollTop: jQuery( element ).offset().top - 90	
+    }, 800);
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-
+});
 //For event one
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -43,6 +27,4 @@ img.onclick = function(){
 }
 
 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-}
+

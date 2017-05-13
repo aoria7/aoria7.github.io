@@ -31,7 +31,10 @@ p.justify { text-align: justify; }
 }
 .left { float: left; }
 .right { float: right; }
-.center-text { text-align: center; }
+.center-text { 
+text-align: center;
+font-family: 'Walkway Black';
+ }
 
  /*Navbar*/
   .nav-tabs li a {
@@ -40,7 +43,7 @@ p.justify { text-align: justify; }
   .navbar {
      font-family: 'Walkway Black';
       margin-bottom: 0;
-      background-color: #2d2d30;
+      background-color: #663399;
       border: 0;
       font-size: 11px !important;
       letter-spacing: 4px;
@@ -101,6 +104,7 @@ p.justify { text-align: justify; }
 	height: 250px;
 	position: relative;
 	margin: 15px 10px;
+	font-family: 'Walkway Black';
 }
 .portfolio-group img {
 	width:100%;
